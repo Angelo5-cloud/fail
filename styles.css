@@ -1,0 +1,175 @@
+body {
+    margin:0;
+    min-height:100vh;
+    
+    background:black;
+    background-size:100%;
+    background:linear-gradient(black 25%, deeppink);
+    perspective:900px ;
+   
+    display:flex ;
+    
+}
+
+:root{
+  --color:black;
+  --trans:rotateY(0deg);
+}
+  
+.reset{
+  height:450px;
+  color:white;
+}
+h4{
+  color:#B0C4DE;
+  position: relative;
+}
+.totalNaranjas,.totalGastados{
+  position: absolute;
+  color:white;
+  
+  
+  font-family:arial;
+ 
+  font-weight:900;
+  
+}
+.btn{
+  position:absolute ;
+  background:black;
+  font-family:Arial;
+  border-radius:15px 15px 15px 15px ;
+  color:white ;
+  height:50px;
+  width:100px;
+  bottom:70px;
+  left :45%;
+  border:none;
+}
+.totalNaranjas{
+  position:absolute;
+  text-align:center;
+  
+  top:20px;
+  
+}
+.totalGastados{
+  
+}
+  
+
+.cubo{
+  position: relative ;
+  width:250px;
+  height:450px;
+  margin:auto ;
+  transform: rotateY(20deg);
+  transform-style:preserve-3d;
+  
+  animation-name:cubo;
+  animation-duration: 1s ;
+ 
+  
+}
+#uno{
+  position: absolute ;
+  width:100%;
+  height:100%;
+  background:var(--color);
+  
+  transform: translateZ(25px);
+ 
+  
+  
+  animation-duration :3s;
+  animation-name: sombra;
+  animation-iteration-count: infinite;
+}
+#dos{
+  position: absolute ;
+  transform: translateZ(-25px);
+  
+  width:100%;
+  height:100%;
+  background-image: linear-gradient(black 20%, var(--color));
+  
+  
+  
+  
+}
+#tres{
+  position: absolute ;
+  height: 100%;
+  width: 50px;
+  background:black ;
+  left:225px;
+  transform: rotateY(90deg);
+}
+#cuatro{
+  
+  position: absolute ;
+  height: 100%;
+  width: 50px;
+  background:black ;
+  transform: rotateY(90deg);
+  right:225px;
+  
+  
+}
+
+
+#cinco{
+  position: absolute ;
+  width:100%;
+  height:100%;
+  
+  background-image :url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUV3iAZvmjbuoqI3gwxqAsHRmip9F3Hs-I_665JM0dJKisLKqVES7kguNZmjIkutsONUL8l634VbcJwwQuwrw0lylGmLTcKIPUj88wG92X1tfnomGXoBS3mJw8EnCG35MOO-fwPu7RhpO5bY1wR9L7tstj8XCMHG0wW6xu8t4gi5Mj_7U3Mw4JuqmeXw/s320/1670117531906.png");
+  
+ 
+  background-size:107%;
+  background-repeat:no-repeat;
+  transform: translateZ(25px);
+  background-position: center ;
+  
+  filter: drop-shadow(10px 12px 10px var(--color));
+  box-shadow:inset 10px 10px 40px var(--color);
+  animation-duration :3s;
+  animation-name: sombra;
+  animation-iteration-count: infinite;
+}
+@keyframes cubo{
+ 0%{
+   transform:var(--trans);
+ }
+}
+
+@keyframes sombra{
+ 
+ 
+ 20%{
+   filter: drop-shadow(10px 12px 15px var(--color)),drop-shadow(10px 12px 15px var(--color));
+   
+      box-shadow:inset -10px 10px 40px var(--color);
+ }
+ 30%{
+    filter: drop-shadow(10px 14px 20px var(--color));
+    box-shadow:inset -10px 10px 30px var(--color);
+ }
+ 50%{
+   filter: drop-shadow(10px 10px 15px var(--color));
+    
+    box-shadow:inset -10px 10px 40px var(--color);
+ }
+ 
+ 70%{
+   
+   filter: drop-shadow(10px 14px 20px var(--color));
+    box-shadow:inset -10px 10px 20px var(--color);
+ }
+ 90%{
+   filter: drop-shadow(12px 10px 15px var(--color));
+   box-shadow:inset 10px 10px 40px var(--color);
+ }
+ 
+ }
+ 
