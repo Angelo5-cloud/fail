@@ -1,0 +1,99 @@
+body{
+  min-height:100vh;
+  display :grid;
+  place-content:center ;
+  background:white;
+}
+:root{
+  --color:#5757577e;
+}
+
+.logo{
+  height :340px;
+  position:relative ;
+  background :none ;
+  display :flex ;
+  justify-content:center ;
+  align-items:center ;
+  width :100%;
+}
+img{
+  position:absolute ;
+  height :200px;
+  
+}
+h1{
+  
+  position:absolute ;
+  bottom :-50px;
+  font-family :'Fredoka One', cursiva;
+  font-size :75px;;
+}
+
+.form{
+  background:none ;
+  width:70%;
+  max-width:400px;
+  padding:0;
+  text-align:center ;
+  margin:auto ;
+  
+}
+.formtitle{
+  height:2em;
+
+}
+.formpara{
+  font-weight:300;
+}
+.formlink{
+  font-weight:400;
+  color:black ;
+}
+
+.formContenido{
+ 
+ 
+   margin-top:2em;
+  display:grid ;
+  gap:3.5em;
+}
+.formGrup{
+  position:relative ;
+ 
+  
+  
+}
+.forminput{
+ 
+  width:90%;
+  background:none;
+  border:none;
+  font-size:1em;
+  padding:.6em 0.3em;
+  outline:none;
+  border-bottom:1px solid black;
+  
+}
+.forminput:focus + .formlabel{
+  transform:translateY(0px)scale(.6);
+  transform-origin:left top;
+  color:blue ;
+  
+  
+}
+
+.formlabel{
+  cursor:pointer ;
+  color:#5757577e;
+  position:absolute ;
+  
+  left:5px;
+  transform:translateY(10px);
+  transition:transform .3s, color .3s;
+  
+}
+.omitir{
+  background:transparent;
+  text-decoration:none;
+}
